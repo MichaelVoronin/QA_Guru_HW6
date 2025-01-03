@@ -8,11 +8,8 @@ def test_dark_theme_by_time():
     current_time = time(hour=23)
     # TODO переключите темную тему в зависимости от времени суток (с 22 до 6 часов утра - ночь)
     if time(hour=22) <= current_time or current_time <= time(hour=6):
-        return True
-    else:
-        return False
+        is_dark_theme = True
 
-    is_dark_theme = None
     assert is_dark_theme is True
 
 
